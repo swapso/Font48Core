@@ -59,7 +59,7 @@ namespace Font48.Forms
       _tbTest.AppTypeId = (int)_appType;
 
       _model.TbTests.Add(_tbTest);
-      _model.SaveChanges();
+      //_model.SaveChanges();
 
     }
 
@@ -87,7 +87,7 @@ namespace Font48.Forms
         tbControlsList.Add(ctl);
       }
       _model.TbControls.AddRange(tbControlsList);
-      _model.SaveChanges();
+      //_model.SaveChanges();
 
     }
 
@@ -114,7 +114,7 @@ namespace Font48.Forms
 
 
       _model.TbActions.Add(_tbAction);
-      _model.SaveChanges();
+      //_model.SaveChanges();
 
     }
 
@@ -169,7 +169,7 @@ namespace Font48.Forms
       ctl.ActionId = _tbAction.Id;// (int)actionType;
 
       _model.TbControls.Add(ctl);
-      _model.SaveChanges();
+      //_model.SaveChanges();
     }
 
     private void lastControl_FontChanged(object sender, EventArgs e)

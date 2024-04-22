@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Development\\Github Projects\\Font48Core\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E36C3936-C570-4D6C-82E0-BEF600451239}|Font48\\Font48Core.csproj|c:\\development\\github projects\\font48core\\font48\\forms\\formbaselog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E36C3936-C570-4D6C-82E0-BEF600451239}|Font48\\Font48Core.csproj|solutionrelative:font48\\forms\\formbaselog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E36C3936-C570-4D6C-82E0-BEF600451239}|Font48\\Font48Core.csproj|C:\\Development\\Github Projects\\Font48Core\\font48\\forms\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E36C3936-C570-4D6C-82E0-BEF600451239}|Font48\\Font48Core.csproj|solutionrelative:font48\\forms\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E36C3936-C570-4D6C-82E0-BEF600451239}|Font48\\Font48Core.csproj|C:\\Development\\Github Projects\\Font48Core\\font48\\forms\\options.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E36C3936-C570-4D6C-82E0-BEF600451239}|Font48\\Font48Core.csproj|solutionrelative:font48\\forms\\options.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormBaseLog.cs",
+              "DocumentMoniker": "C:\\Development\\Github Projects\\Font48Core\\Font48\\Forms\\FormBaseLog.cs",
+              "RelativeDocumentMoniker": "Font48\\Forms\\FormBaseLog.cs",
+              "ToolTip": "C:\\Development\\Github Projects\\Font48Core\\Font48\\Forms\\FormBaseLog.cs",
+              "RelativeToolTip": "Font48\\Forms\\FormBaseLog.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAwCEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T12:57:00.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Home.cs",
+              "DocumentMoniker": "C:\\Development\\Github Projects\\Font48Core\\Font48\\Forms\\Home.cs",
+              "RelativeDocumentMoniker": "Font48\\Forms\\Home.cs",
+              "ToolTip": "C:\\Development\\Github Projects\\Font48Core\\Font48\\Forms\\Home.cs",
+              "RelativeToolTip": "Font48\\Forms\\Home.cs",
+              "ViewState": "AQIAAEwAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T12:56:51.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Options.cs",
+              "DocumentMoniker": "C:\\Development\\Github Projects\\Font48Core\\Font48\\Forms\\Options.cs",
+              "RelativeDocumentMoniker": "Font48\\Forms\\Options.cs",
+              "ToolTip": "C:\\Development\\Github Projects\\Font48Core\\Font48\\Forms\\Options.cs",
+              "RelativeToolTip": "Font48\\Forms\\Options.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T12:56:38.312Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
