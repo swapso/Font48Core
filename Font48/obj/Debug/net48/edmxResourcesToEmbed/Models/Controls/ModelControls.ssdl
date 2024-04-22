@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ControlsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TbAction">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TestId" Type="int" Nullable="false" />
+    <Property Name="ActionTypeId" Type="int" Nullable="false" />
+    <Property Name="Created" Type="datetime" />
+    <Property Name="FontSize" Type="float" />
+  </EntityType>
+  <EntityType Name="TbActionType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="200" />
+    <Property Name="Description" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="TbAppType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="200" />
+    <Property Name="Description" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="TbControl">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ActionId" Type="int" Nullable="false" />
+    <Property Name="ControlName" Type="varchar" MaxLength="200" />
+    <Property Name="ControlText" Type="varchar(max)" />
+    <Property Name="ControlTypeId" Type="int" />
+    <Property Name="LocationX" Type="int" />
+    <Property Name="LocationY" Type="int" />
+    <Property Name="SizeX" Type="int" />
+    <Property Name="SizeY" Type="int" />
+    <Property Name="IsAutoSize" Type="bit" />
+  </EntityType>
+  <EntityType Name="TbControlType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="200" />
+    <Property Name="Description" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="TbTest">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TestName" Type="varchar" MaxLength="50" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="Created" Type="datetime" />
+    <Property Name="FontSize" Type="decimal" Precision="18" Scale="3" />
+    <Property Name="AppTypeId" Type="int" />
+  </EntityType>
+  <EntityContainer Name="ControlsModelStoreContainer">
+    <EntitySet Name="TbAction" EntityType="Self.TbAction" Schema="dbFont" store:Type="Tables" />
+    <EntitySet Name="TbActionType" EntityType="Self.TbActionType" Schema="dbFont" store:Type="Tables" />
+    <EntitySet Name="TbAppType" EntityType="Self.TbAppType" Schema="dbFont" store:Type="Tables" />
+    <EntitySet Name="TbControl" EntityType="Self.TbControl" Schema="dbFont" store:Type="Tables" />
+    <EntitySet Name="TbControlType" EntityType="Self.TbControlType" Schema="dbFont" store:Type="Tables" />
+    <EntitySet Name="TbTest" EntityType="Self.TbTest" Schema="dbFont" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

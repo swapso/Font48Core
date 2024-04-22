@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <OutputType>WinExe</OutputType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Models\Controls\ModelControls.Context.cs" />
+    <Compile Remove="Models\Controls\ModelControls.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Models\Controls\ModelControls.Context.tt" />
+    <None Remove="Models\Controls\ModelControls.edmx" />
+    <None Remove="Models\Controls\ModelControls.edmx.diagram" />
+    <None Remove="Models\Controls\ModelControls.tt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Forms\Singles\FormContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Singles\FormDgv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ControlsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="ModelControls" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TbActions" EntityType="ControlsModel.TbAction" />
+    <EntitySet Name="TbActionTypes" EntityType="ControlsModel.TbActionType" />
+    <EntitySet Name="TbAppTypes" EntityType="ControlsModel.TbAppType" />
+    <EntitySet Name="TbControlTypes" EntityType="ControlsModel.TbControlType" />
+    <EntitySet Name="TbTests" EntityType="ControlsModel.TbTest" />
+    <EntitySet Name="TbControls" EntityType="ControlsModel.TbControl" />
+  </EntityContainer>
+  <EntityType Name="TbAction">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TestId" Type="Int32" Nullable="false" />
+    <Property Name="ActionTypeId" Type="Int32" Nullable="false" />
+    <Property Name="Created" Type="DateTime" Precision="3" />
+    <Property Name="FontSize" Type="Double" />
+  </EntityType>
+  <EntityType Name="TbActionType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TbAppType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TbControlType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TbTest">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TestName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Created" Type="DateTime" Precision="3" />
+    <Property Name="FontSize" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="AppTypeId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TbControl">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ActionId" Type="Int32" Nullable="false" />
+    <Property Name="ControlName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ControlText" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ControlTypeId" Type="Int32" />
+    <Property Name="LocationX" Type="Int32" />
+    <Property Name="LocationY" Type="Int32" />
+    <Property Name="SizeX" Type="Int32" />
+    <Property Name="SizeY" Type="Int32" />
+    <Property Name="IsAutoSize" Type="Boolean" />
+  </EntityType>
+</Schema>

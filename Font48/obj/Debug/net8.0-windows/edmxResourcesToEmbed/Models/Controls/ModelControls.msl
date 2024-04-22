@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ControlsModelStoreContainer" CdmEntityContainer="ModelControls">
+    <EntitySetMapping Name="TbActions">
+      <EntityTypeMapping TypeName="ControlsModel.TbAction">
+        <MappingFragment StoreEntitySet="TbAction">
+          <ScalarProperty Name="FontSize" ColumnName="FontSize" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="ActionTypeId" ColumnName="ActionTypeId" />
+          <ScalarProperty Name="TestId" ColumnName="TestId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TbActionTypes">
+      <EntityTypeMapping TypeName="ControlsModel.TbActionType">
+        <MappingFragment StoreEntitySet="TbActionType">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TbAppTypes">
+      <EntityTypeMapping TypeName="ControlsModel.TbAppType">
+        <MappingFragment StoreEntitySet="TbAppType">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TbControlTypes">
+      <EntityTypeMapping TypeName="ControlsModel.TbControlType">
+        <MappingFragment StoreEntitySet="TbControlType">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TbTests">
+      <EntityTypeMapping TypeName="ControlsModel.TbTest">
+        <MappingFragment StoreEntitySet="TbTest">
+          <ScalarProperty Name="AppTypeId" ColumnName="AppTypeId" />
+          <ScalarProperty Name="FontSize" ColumnName="FontSize" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="TestName" ColumnName="TestName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TbControls">
+      <EntityTypeMapping TypeName="ControlsModel.TbControl">
+        <MappingFragment StoreEntitySet="TbControl">
+          <ScalarProperty Name="IsAutoSize" ColumnName="IsAutoSize" />
+          <ScalarProperty Name="SizeY" ColumnName="SizeY" />
+          <ScalarProperty Name="SizeX" ColumnName="SizeX" />
+          <ScalarProperty Name="LocationY" ColumnName="LocationY" />
+          <ScalarProperty Name="LocationX" ColumnName="LocationX" />
+          <ScalarProperty Name="ControlTypeId" ColumnName="ControlTypeId" />
+          <ScalarProperty Name="ControlText" ColumnName="ControlText" />
+          <ScalarProperty Name="ControlName" ColumnName="ControlName" />
+          <ScalarProperty Name="ActionId" ColumnName="ActionId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
